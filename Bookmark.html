@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark</title>
+    <link href="css/styleBookMark.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/all.min.css" rel="stylesheet" />
+  </head>
+  <body class="body-bg">
+    <div id="errorMessage"></div>
+    <div
+      class="container d-flex flex-column justify-content-center align-items-center"
+    >
+      <h1 class="text-center position-relative pt-5 bookmark">Bookmarker</h1>
+    </div>
+    <div
+      class="bookmark-body w-100 p-3 py-2 mt-5 d-flex flex-column justify-content-center gap-4"
+    >
+      <h2 class="text-center bookmark-body">
+        <i class="fa-solid fa-bookmark d-inline"></i>Bookmark your favorite
+        cook<i class="fa-solid fa-bookmark d-inline"></i>
+      </h2>
+    </div>
+
+    <div class="w-75 mx-auto p-5">
+      <div class="mb-4">
+        <label for="siteNameInput" class="form-label"
+          ><i class="fa-solid fa-book-bookmark pe-2"></i>Cook Name</label
+        >
+        <input
+          type="text"
+          oninput="validateForm(this)"
+          class="form-control"
+          id="siteNameInput"
+          placeholder="Bookmark Name"
+        />
+        <div class="alert alert-danger py-1 mt-1 d-none">
+          your Cook name must be valid >3
+        </div>
+      </div>
+      <div class="mb-4">
+        <label for="siteUrlInput" class="form-label"
+          ><i class="fa-solid fa-link pe-2"></i>Cook URL</label
+        >
+        <input
+          type="url"
+          oninput="validateForm(this)"
+          required
+          class="form-control"
+          id="siteUrlInput"
+          placeholder="Website URL"
+        />
+        <div class="alert alert-danger py-1 mt-1 d-none">
+          your url must be valid
+        </div>
+      </div>
+      <div class="text-center">
+        <button class="btn btn-danger d-block w-100 w-md-25 mx-auto" onclick="addWeb()">Submit</button>
+
+      </div>
+    </div>
+    <div class="w-100 mx-auto p-5">
+      <div class="table-responsive">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th class="text-center">Index</th>
+              <th class="text-center">Cook Name</th>
+              <th class="text-center">Visit</th>
+              <th class="text-center">Delete</th>
+            </tr>
+          </thead>
+          <tbody id="row">
+            <!-- الصفوف هتتضاف من جافاسكريبت -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="js/mainBookMark.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

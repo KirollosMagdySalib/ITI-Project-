@@ -1,0 +1,312 @@
+ html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+.card-img-top{
+  height: 250px !important;
+  object-fit: contain !important; 
+  width: 100% !important;
+}
+.head {
+  height: 100vh;
+  background-image: url(../img/meal-1.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
+}
+.head .content {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+nav {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+}
+
+.color .nav-link {
+  color: #fff;
+}
+.red-color {
+  color: #ff305b;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 25px;
+}
+.navbar-nav .nav-link.active {
+  color: #ff305b;
+}
+.color-h1 {
+  color: #ff305b;
+  font-size: 60px;
+}
+.nav-link:hover {
+  color: #ff305b;
+}
+
+.hello {
+  padding: 60px 0 125px;
+}
+.inner-hello {
+  box-shadow: -8px 8px 0px #555555;
+  position: relative;
+  overflow: hidden;
+  border: none;
+}
+
+.layer {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: 0.5s;
+}
+
+.inner-hello:hover .layer {
+  opacity: 1;
+  transform: translateY(0%);
+}
+i:hover {
+  color: #ff305b !important;
+}
+
+.border-dash {
+  border-top: 2px dashed #000;
+  width: 100%;
+}
+.description-hello h3 {
+  background-color: transparent;
+  position: relative;
+}
+.description-hello h3::after {
+  content: "";
+  width: 4%;
+  height: 10%;
+  background-color: #ff305b;
+  position: absolute;
+  top: 50%;
+  right: 99.5%;
+  transform: rotate(90deg);
+}
+.info-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* two columns like the image */
+  gap: 10px 40px;
+  font-family: "Huninn", sans-serif;
+}
+.label {
+  font-weight: bold;
+  color: #000;
+}
+.value {
+  color: #666;
+}
+.btn-1 {
+  color: white;
+  background-color: #ff305b;
+  border: none;
+}
+.btn-1:hover {
+  background-color: #ec2403;
+}
+.Our-Services {
+  background-color: #f1f1f1;
+  padding: 60px 0 125px;
+}
+
+.Our-Services h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  color: #333333;
+  position: relative;
+}
+.Our-Services .container .hr-color {
+  background-color: #ff305b;
+  border: none;
+  height: 2.5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+h2::after {
+  content: "";
+  width: 3%;
+  height: 3px;
+  background-color: #ff305b;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+h2::before {
+  content: "";
+  width: 3%;
+  height: 3px;
+  background-color: #ff305b;
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.inner-service {
+  padding: 40px 15px;
+  color: #555555;
+  text-align: center;
+  transition: transform 1s;
+}
+.inner-service p,
+h3 {
+  color: #555555;
+}
+.inner-service i {
+  color: #ff305b;
+  font-size: 36px;
+  transition: transform 1s;
+}
+.inner-service:hover {
+  transform: scale(1.1);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.Our-Portfolio h2 {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  color: #333333;
+  position: relative;
+}
+.Our-Portfolio .container .hr-color {
+  background-color: #ff305b;
+  border: none;
+  height: 2.5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+.Our-Portfolio h2::after {
+  content: "";
+  width: 50px;
+  height: 3px;
+  background-color: #ff305b;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.Our-Portfolio h2::before {
+  content: "";
+  width: 50px;
+  height: 3px;
+  background-color: #ff305b;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.inner-portfolio {
+  position: relative;
+  overflow: hidden;
+  border: none;
+}
+
+.inner-portfolio .layer-port {
+   background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0; 
+  left: 0;
+  opacity: 0; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  z-index: 2;
+}
+
+.inner-portfolio .layer-port i {
+  color: #ff305b;
+  position: absolute;
+  font-size: 26px;
+   right: 15px;
+  top: 250px;
+}
+
+.inner-portfolio:hover .layer-port {
+  opacity: 1;
+  transition: 1s;
+  
+}
+.numbers
+{
+  background-color: #F1F1F1;
+  margin-top: 100px;
+}
+.numbers .container
+{
+   padding-top: 80px;
+   padding-bottom: 50px;
+}
+.numbers .container i
+{
+  color: #ff305b;
+}
+
+.form
+{
+  margin-bottom: 8%;
+}
+.form .container .b-1 {
+  background: #ff305b;
+  border: none;
+  color: #ffffff;
+  margin-right: 10px;
+  padding: 12px 20px;
+  border-radius: 4px;
+  font-family: "Huninn", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 20px;
+}
+.form .container .b-1:hover
+{
+   background-color: #ec2403;
+}
+.copy-right .color-span
+{
+  color: #ff305b;
+}
+.color-view
+{
+  background-color: #ff305b !important;
+  color: white !important;
+}
+.color-view:hover
+{
+   background-color: #ec2403 !important;
+}
+.nav-link
+{
+  color:black;
+}
+.nav-pills .nav-link.active
+{
+  background-color: #ff305b;
+}
+
